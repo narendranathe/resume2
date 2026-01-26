@@ -5,4 +5,4 @@ Based off of [narendranathe/resume2](https://github.com/narendranathe/resume2/)
 
 Use it on overleaf: [Jake's Resume](https://www.overleaf.com/latex/templates/jakes-resume/syzfjbzwjncs) (Not updated)
 
-[Narendranath.png](https://github.com/narendranathe/resume2/blob/master/Narendranath.png)
+![Narendranath.png](https://github.com/narendranathe/resume2/blob/master/Narendranath.png)
