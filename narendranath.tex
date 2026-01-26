@@ -1,0 +1,196 @@
+%-------------------------
+% Resume in Latex
+% Author : Narendranth Edara
+% Based off of: https://github.com/narendranathe/resume2
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+
+\begin{center}
+    \textbf{\Huge \scshape Narendranath} \\ \vspace{1pt}
+    \small 123-456-7890 $|$ \href{mailto:your@email.com}{\underline{your@email.com}} $|$ 
+    \href{https://linkedin.com/in/narendranath}{\underline{linkedin.com/in/narendranath}} $|$
+    \href{https://github.com/narendranath}{\underline{github.com/narendranath}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Missouri University of Science and Technology}{Rolla, MO}
+      {Master of Science in Information Science and Technology}{Aug. 2019 -- May 2021}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Senior Data Engineer}{Jan. 2022 -- Present}
+      {ExponentHR}{Dallas, TX}
+      \resumeItemListStart
+        \resumeItem{Built enterprise data platforms and scalable analytics solutions processing large-scale HR datasets}
+        \resumeItem{Reduced deployment cycles from 3 months to 14 days by implementing Scrum sprints, achieving 85\% reduction}
+        \resumeItem{Aligned cross-functional teams (dev/test/IT/business) on priorities, enabling 6.5x faster deployments}
+        \resumeItem{Migrated on-premise STAR schemas to Microsoft Fabric cloud platform for improved scalability}
+        \resumeItem{Developed and optimized data pipelines using Python, SQL, Apache Spark, and Kafka}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Engineer}{Jun. 2020 -- Dec. 2021}
+      {C2FO}{Kansas City, MO}
+      \resumeItemListStart
+        \resumeItem{Designed and maintained scalable data pipelines using Apache Spark and AWS services}
+        \resumeItem{Implemented ETL workflows for financial data processing and analytics reporting}
+        \resumeItem{Collaborated with analytics teams to optimize SQL queries and improve data warehouse performance}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Data Engineer}{Jan. 2019 -- May 2020}
+      {Zomato / udaan.com}{India}
+      \resumeItemListStart
+        \resumeItem{Built data infrastructure supporting high-volume transaction processing for e-commerce platforms}
+        \resumeItem{Developed real-time data streaming solutions using Apache Kafka for event-driven architectures}
+        \resumeItem{Created automated reporting systems and dashboards for business intelligence teams}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Real-Time Fraud Detection ML Platform} $|$ \emph{Python, Kafka, FastAPI, PostgreSQL, Docker}}{2024}
+          \resumeItemListStart
+            \resumeItem{Architected production-grade ML platform processing 100+ transactions per second}
+            \resumeItem{Achieved sub-millisecond prediction latency using optimized model serving infrastructure}
+            \resumeItem{Implemented fault-tolerant streaming pipeline with Apache Kafka for real-time event processing}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Portfolio Risk Analytics Platform} $|$ \emph{Python, SQL, Docker, REST API}}{2024}
+          \resumeItemListStart
+            \resumeItem{Built Value at Risk (VaR) calculation engine with 47.8 transactions per second throughput}
+            \resumeItem{Designed scalable architecture achieving sub-5-second end-to-end latency for risk metrics}
+            \resumeItem{Developed REST APIs for portfolio analysis serving enterprise-level financial computations}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, SQL, Java} \\
+     \textbf{Frameworks}{: Apache Spark, Apache Kafka, FastAPI, Flask, Databricks} \\
+     \textbf{Developer Tools}{: Git, Docker, Azure, AWS, Microsoft Fabric, VS Code, PyCharm} \\
+     \textbf{Libraries}{: pandas, NumPy, scikit-learn, PySpark, MLflow}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
